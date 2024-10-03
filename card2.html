@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ATS </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            }
+
+            body {
+            font-family: "Cairo", sans-serif;
+            background-color: #fff4e8;
+            margin: 0;
+            padding: 0;
+            padding-top: 6em;
+            height: 100%;
+            justify-content: center; 
+            align-items: center; 
+            }
+
+            .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 3.125em;
+            margin-top: 10px;
+            padding: 2px;
+            }
+
+            .projectscard {
+            background-color: #1D3854;
+            border: 3px solid #cdcbcb;
+            min-height: 14em;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 20px;
+            transition: 0.7s ease;
+            }
+
+            .projectscard:hover {
+            transform: scale(1.1);
+            background-color: #1D3854;
+            opacity: 0.9;
+            }
+
+            .prijects-images img {
+            width: 80%;
+            }
+
+            .prijects-info {
+            padding: 0.5em;
+            }
+
+            .prijects-category {
+            font-size: 2em;
+            color: #f6f6f6;
+            margin: 10% 1% 10%;
+            }
+
+            .prijects-title .ms {
+            display: flex;
+            justify-content:center;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-top: 5%;
+            margin-left: 20px;
+            color: #ff623f;
+            }
+
+            .sjl{
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                position: relative;
+                left: 1%;
+                bottom: 10%;
+                background-color: #fff;
+                width: 120px;
+                height: 40px;
+                margin-bottom: 3%;
+                border-radius: 50px;
+            }
+
+            /* سجل الان */
+            .more-dit {
+            text-decoration: none;
+            color: #1D3854;
+            transition: 0.4s;
+            display: flex;
+            justify-content:center;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-top: 20%;
+            }
+
+
+            .more-dit:hover {
+            color: #ff623f;
+            }
+
+            p{
+            text-shadow: 3px 3px 5px #ff623f;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="projectscard">
+            <div class="prijects-images">
+                <img src="200.jpg"/>
+            </div>
+            <div class="prijects-info">
+                <p class="prijects-category"> مسابقةالاكواد </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem aut aspernatur vitae veniam tenetur reprehenderit nemo non ipsa fugiat necessitatibus ducimus quia,
+                <strong class="prijects-title">
+                    <span class="ms">8:30 am - 02/11/2024</span>
+                    <div class="sjl">
+                      <a href="" class="more-dit">سجل الان</a>
+                    </div>
+                </strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

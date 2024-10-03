@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> ATS </title>
+  
+    <style>
+        #myForm {
+            display: none;
+        }
+
+        /* #ssss{
+            font-family: "Cairo", sans-serif;
+            box-shadow: 0 5px 25px rgb(230, 102, 16);
+            text-shadow: 0 5px 25px rgba(189, 76, 15, 0.875);
+            border: 3px solid #1d3854;
+            font-weight: 900;
+            margin-top: 2em;
+            font-size: 35px;
+            background-color: #ff623f;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #fff4e8;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            padding-left: 2em;
+            padding-right: 2em;
+        } */
+
+        
+    </style>
+
+</head>
+
+<body>
+
+<!-- الخطوط الملونةالمتحركة -->
+  <div class='light x1'></div>
+  <div class='light x2'></div>
+  <div class='light x3'></div>
+  <div class='light x4'></div>
+  <div class='light x5'></div>
+  <div class='light x6'></div>
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div class='light x1'></div>
+  <div class='light x2'></div>
+  <div class='light x3'></div>
+  <div class='light x4'></div>
+  <div class='light x5'></div>
+  <div class='light x6'></div>
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+
+<!-- <div id="splash-screen">
+    <img class="img1" src="5555.gif" alt=''>
+</div>
+  <div id="page-content" style="display:none;">
+  </div> -->
+
+    <header>
+        <img class="img1" src="img/logoats.png" alt=''>
+        <div id="sidebar">
+            <a href="javascript:void(0)" class="sidebar-btn" onclick="toggleSidebar()">☰</a>
+        </div>
+            <div class="dropdown-menu">
+            <ul>
+             <li ><a href="#prijects"> الفعاليات </a></li>
+             <li><a href="#msak"> مسابقةالاكواد </a></li>
+             <li><a href="#ro"> رعاة الحدث </a></li>
+             <li><a href="#wrsh"> ورش العمل </a></li>
+             <li><a href=""> أملئ الاستبيان </a></li>
+            </ul>
+            </div>       
+    </header>
+
+<div class="timer">
+    <section class="ttt">
+        <div id="text-with-border">
+            <div id="countdown" onclick="showMessage()">
+                <h3 id="days"></h3>
+                <h3 id="hours"></h3>
+                <h3 id="minutes"></h3>
+                <h3 id="seconds"></h3>
+            </div>
+        </div>
+    </section>   
+     
+    <section class="ttt1">
+        <div id="text-with-border1">
+            <h3 id="d">Day</h3>
+            <h3 id="h">Hrs</h3>
+            <h3 id="m">Min</h3>
+            <h3 id="s">Sec</h3>    
+        </div>
+        <div id="hiddenMessage" style="display: none; font-size: 40px; color: rgb(169, 71, 25);" >
+            coming Soon...
+        </div>
+    </section>
+</div>
+    <section class="main">
+        <div>
+            <img src="img/logo24.gif" alt=''>
+        </div>
+        <div class="tx" style="text-align: center; display: inline-block;">
+            <h2 style="display: inline-block;"><span style="display: inline-block; margin-top: 0;" class="span_h1">Evnt<h6 style="display: inline-block;"> ATS </h6></span></h2>
+            <h3>هو حـدث مقـام في جـامعة اجدابيا لـجميع طـلاب تقنيــة المعلـومـات و المهتمـيـن بهـا , يتشـارك فيـه جميــع الطـلاب خبـراتهـم و مهـارتهـم بعـرضهـا فــي المـلتقـى , و سـيتم تقـديــم الـعديــد مـن البـرامــج التعليميـة و العـروض التقديمية و المسابقات الممتعة</h3>  
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="tx" style="text-align: right;">
+            <h2>الدعوة</h2>
+            <h3>الدعوة مفتوحـة إلى جميـع طـلاب تقـنية المعلومـات و المهتـمين بها , و ذلـك من اجل استفـادتهـم من النشاطات التـي سـتقـام فـي جـامعـة اجدابيا ابتـدأ مـن السـاعة التـاسعـة صبـاحـاً حتـى الثـالثـة مسـاءً</h3>
+        </div>
+    </section>   
+    
+    <section class="projects">
+        <div>
+        <div id="prijects"><h2 class="title" style="text-shadow: 3px 3px 5px #f16c06;">الفعاليات</h2></div>
+        <div id="msak"><a href="card2.html"><h2 class="title" style="text-shadow: 3px 3px 5px #f16c06;"> مسابقة الاكواد </h2></a></div>
+        <div id="ro"><h2 class="title" style="text-shadow: 3px 3px 5px #f16c06;">رعاة الحدث</h2></div>
+        <div id="wrsh"><a href="card4.html"><h2 class="title" style="text-shadow: 3px 3px 5px #f16c06;"> ورش العمل </h2></a></div>
+        </div>
+        <!-- <div class="content">
+            <div class="projectscard">
+                <div class="prijects-images">
+                    <img src="200.jpg"/>
+                </div>
+                <div class="prijects-info">
+                    <p class="prijects-category">مسابقة الأكواد</p>
+                    <strong class="prijects-title">
+                        <span class="ms">10:00 - 02/11/2024</span>
+                        <a href="" class="more-dit">سجل الان</a>
+                    </strong>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="content">
+            <div class="projectscard">
+                <div class="prijects-images">
+                    <img src="200.jpg"/>
+                </div>
+                <div class="prijects-info">
+                    <p class="prijects-category">جناح التقنية</p>
+                    <strong class="prijects-title">
+                        <span class="ms">10:00 - 02/11/2024</span>
+                        <a href="" class="more-dit">سجل الان</a>
+                    </strong>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="content">
+            <div class="projectscard">
+                <div class="prijects-images">
+                    <img src="200.jpg"/>
+                </div>
+                <div class="prijects-info">
+                    <p class="prijects-category">الملصقات العلمية</p>
+                    <strong class="prijects-title">
+                        <span class="ms">10:00 - 02/11/2024</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvEn1y-oQ3F0IpqXzPXrB1cf1-oqz4tn2CJOel3TUm41V5kQ/viewform?embedded=true" class="more-dit">سجل الان</a>
+                    </strong>
+                </div>
+            </div>
+        </div> -->
+    </section>
+            
+    <section class="main" id="promo">
+        <h2 class="vid" style="font-size: 40px; margin-top: 100px; color: #ff623f; text-shadow: 3px 3px 5px #2e6197;"> ATS </h2>
+        <video autoplay muted loop controls>
+            <source src="vi.mp4" type="video/mp4">
+        </video>
+    </section>
+
+ <!--اضافة رابط اي لعبه-->
+ <section  class="main">
+        <div id="rrr">
+            <a href=" *** ">العب معنا</a>  
+        </div>   
+            <div id="rrr1">
+                <a href=" "> املئ الاستبيان </a>
+                <!-- <button id="ssss" onclick="myFunction()">املئ الاستبيان</button>  -->
+            </div>
+        <div id="myForm">
+            <iframe src="***" width="100%" height="1350" frameborder="0" marginheight="0" marginwidth="0">جارٍ التحميل…</iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">2024 Copyrights @ <span>ATS</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    var targetDate = new Date("NOV 02, 2024 9:59:59").getTime();
+    var countdown = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = targetDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        days = String(days).padStart(2, '0');
+        hours = String(hours).padStart(2, '0');
+        minutes = String(minutes).padStart(2, '0');
+        seconds = String(seconds).padStart(2, '0');
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+    
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "انتهى الوقت!";
+        }
+    }, 1000);
+</script>
+
+<script>
+function showMessage() {
+    var messageElement = document.getElementById("hiddenMessage");
+    messageElement.style.display = "block";
+
+    setTimeout(function() {
+        messageElement.style.display = "none";
+    }, 3000); 
+}
+</script>
+
+<!--اضافة PLAT-->
+<script src="***" data-use-service-core defer></script>
+ <div class="elfsight-app-0cbd29b2-0a8e-416f-bff7-31e477ea765d" data-elfsight-app-lazy></div>
+	
+<script>
+function myFunction() {
+  var x = document.getElementById("myForm");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+	
+<script>
+function toggleSidebar() {
+          var sidebar = document.getElementById("sidebar");
+          if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+          } else {
+            sidebar.style.width = "250px";
+          }
+        }
+</script>
+
+<script>
+    // عند تحميل الصفحة بالكامل
+    window.onload = function() {
+      // إخفاء السبلاش سكرين
+      document.getElementById('splash-screen').style.display = 'none';
+      // إظهار محتوى الصفحة
+      document.getElementById('page-content').style.display = 'block';
+    };
+</script>
+    
+<script>
+     window.addEventListener('scroll', function() {
+     var header = document.querySelector('header');
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition > 100) { // 100 هو عدد البكسلات التي تريد التمرير لأسفل قبل تغيير الحجم
+        header.classList.add('header-small');
+  }
+    else {
+        header.classList.remove('header-small');
+  }
+});
+
+</script>
+<script>
+    const button = document.querySelector('.sidebar-btn');
+    const menu = document.querySelector('.dropdown-menu');
+
+    button.addEventListener('click', () => {
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});
+</script>
+
+</html>

@@ -1,0 +1,936 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #fff4e8;
+  margin: 0;
+  padding: 0;
+  padding-top: 6em;
+  height: 100%;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* الخطوط المتحركة */
+.light {
+  position: absolute;
+  width: 0px;
+  /*خطوط متحركه*/
+  box-shadow: #d37509 0px 0px 10px 2px;
+  opacity: 0.1;
+  top: 100vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: -100;
+}
+
+.x1 {
+  -webkit-animation: floatDown 4s infinite linear;
+  -moz-animation: floatDown 4s infinite linear;
+  -o-animation: floatDown 4s infinite linear;
+  animation: floatDown 4s infinite linear;
+  -webkit-transform: scale(5);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.x2 {
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
+}
+
+.x3 {
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  left: -15%;
+}
+
+.x4 {
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
+}
+
+.x5 {
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2);
+  left: -57%;
+}
+
+.x6 {
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  left: -81%;
+}
+
+.x7 {
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+  left: 37%;
+}
+
+.x8 {
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  left: 62%;
+}
+
+.x9 {
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
+}
+
+@-webkit-keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0.3;
+  }
+}
+@-moz-keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0.3;
+  }
+}
+@-o-keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0.3;
+  }
+}
+@keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0.3;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes finalFade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes finalFade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes finalFade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes finalFade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* navال */
+header {
+  position: fixed;
+  z-index: 500;
+  opacity: 0.95;
+  background-color: #1d3854;
+  width: 100%;
+  height: 4.6em;
+  top: 0;
+
+  /* transition: background-color 0.6s; */
+}
+
+/* script */
+.header-small {
+  height: 4.6em; /* اضبط الارتفاع حسب الحجم المصغر الذي تريده */
+  background-color: #1d3854;
+  opacity: 0.95;
+}
+
+/* الشعار */
+header img {
+  position: absolute;
+  font-size:10px;
+  height: 6em;
+  width: 6.5em;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* navالزر في ال */
+.sidebar-btn {
+  position: absolute;
+  top: 0.1em;
+  right: 0.9em;
+  font-size:x-large;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ****************** */
+#sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ff623f;
+  display: block;
+  transition: 0.3s;
+}
+#sidebar a:hover {
+  color: #ff623f;
+}
+
+/* navقائمة الزر في ال */
+.dropdown-menu {
+  display: none;
+  position: absolute; 
+  top: 65px; 
+  right: 5px; 
+  background-color: #d14923;
+  border: 1px solid #ccc; 
+  width: 40%;
+}
+
+/* الكلمات في قائمة الزر */
+li{
+  color: #fff;
+  list-style: none;
+  text-align: center;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ***************** */
+#sidebar.open {
+  width: auto;
+  color: #000000;
+}
+
+/* الخصائص التي تجعل الوقت المتبقي في شكل دوائر */
+.ttt {
+  font-size: 1.2em;
+  padding-top: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* الكلمات تحت الدوائر */
+.ttt1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.85em;
+  padding-top: 0.3125%;
+  text-align: center;
+}
+
+.timer{
+  width: 100%;
+ 
+}
+
+#countdown{
+  width: 100%;
+}
+
+/* دائرة الايام */
+#text-with-border #days {
+  height: 100%;
+  border-radius: 9999px;
+  border: 3px dotted #ff623f ;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  margin-right: 0.4em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: inline-block;
+  color: #1D3854;
+
+}
+
+/* دائرة الساعات */
+#text-with-border #hours {
+  height: 100%;
+  margin-right: 0.4em;
+  border-radius: 9999px;
+  border: 3px dotted #ff623f ;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: inline-block;
+  color: #1D3854;
+}
+
+/* دائرة الدقائق */
+#text-with-border #minutes {
+  margin-right: 0.4em;
+  height: 100%;
+  border-radius: 9999px;
+  border: 3px dotted #ff623f;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: inline-block;
+  color: #1D3854;
+}
+
+/*دائرة الثواني*/
+#text-with-border #seconds {
+  margin-right: 0.4em;
+  height: 100%;
+  border-radius: 9999px;
+  border: 3px dotted #ff623f;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: inline-block;
+  color: #1D3854;
+}
+
+/* تاريخ */
+#text-with-border1 h3 {
+  padding-left: 0.8em;
+  padding-right: 1em;
+  display: inline-block;
+  color: #1D3854;
+}
+
+
+/* عناصر الصفحة */
+.main {
+  direction: rtl;
+  padding-top: 0;
+}
+
+/* الصورة */
+.main img {
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  padding-right:10%; 
+  top: 0;
+  left: 15%;
+  width: 100%;
+  height: 70%;
+  min-width: 100%;
+  min-height: 70%;
+  z-index: -1;
+}
+
+/*evnt*/
+.main span {
+  padding-right: 5px;
+  color: #ff623f;
+  font-size: 1.5em;
+  font-weight: 500;
+  top: 0;
+}
+
+.main .tx{
+  border: 2px solid #ff623f;
+  margin: 2%;
+}
+/*الدعوه*/
+.main h2 {
+  color: #ff623f;
+  font-size: 1.7em;
+  font-weight: 900;
+  text-align: center;
+  margin-top:25px;
+}
+
+/*النص*/
+.main h3 {
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 0.8em;
+  margin: 2%;
+  text-align: center;
+}
+
+/*ATS*/
+.main h6 {
+  color: #1d3854;
+  padding-right: 0.2em;
+  font-size: 1.2em;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+}
+
+/* عناصر الفعاليات */
+.projects {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+
+/* كل هذه خاصة ببوكسات الفعاليات */
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fff4e8;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+#prijects ,#msak ,#ro , #wrsh{
+  background-color: #1d3854;
+  width: 60%;
+  right:20%;
+  margin-left: 20%;
+  border-radius: 10px;
+}
+
+#prijects a , #msak a , #ro a , #wrsh a{
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+/* .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 3.125em;
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.projectscard {
+  background-color: #1D3854;
+  border: 3px solid #cdcbcb;
+  min-height: 14em;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.projectscard:hover {
+  transform: scale(1.1);
+  background-color: #1D3854;
+  opacity: 0.9;
+}
+
+.prijects-images img {
+  width: 80%;
+}
+
+.prijects-info {
+  padding: 0.5em;
+}
+
+.prijects-category {
+  font-size: 2em;
+  color: #f6f6f6;
+}
+
+.prijects-title .ms {
+  display: flex;
+  justify-content:center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 20px;
+}*/
+
+
+/* سجل الان */
+/*.more-dit {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+  display: flex;
+  justify-content:center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-dit:hover {
+  color: #ff623f;
+} */
+
+#promo{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  justify-content:center;
+  width: 100%;
+}
+
+/* الفيديو */
+video {
+  position: relative;
+  margin: 2% 10%;
+  padding: 5%;
+  left: 7%;
+  /* opacity: 1; */
+  padding-top: 5%;
+  width: 85%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  justify-content:center;
+}
+
+/*زرالعب معنا */
+.main #rrr {
+  width: 8em;
+  height: 2em;
+  min-width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  overflow: hidden;
+  box-shadow: 0 5px 25px #1d3854;
+  font-size: 2rem;
+  background-color: #ff623f;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  left: 1%;
+  bottom: 10%;
+}
+
+.main #rrr a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* زر املئ الاستبيان */
+.main #rrr1 {
+  width: 8em;
+  height: 2em;
+  min-width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  overflow: hidden;
+  box-shadow: 0 5px 25px #ff623f;
+  font-size: 2rem;
+  background-color: #ff623f;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  left: 1%;
+  bottom: 50%;
+}
+
+.main #rrr1 a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#rrr:hover {
+  transform: scale(1.015);
+  background-color: #ff623f;
+  opacity: 0.9;
+  transition: 0.7s ease;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#rrr1:hover {
+  transform: scale(1.015);
+  background-color: #ff623f;
+  opacity: 0.9;
+  transition: 0.7s ease;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*حقوق النشر*/
+.footer {
+  /* position: fixed; */
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #1d3854;
+  color: #fff;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em; 
+  z-index: 2;
+}
+
+/* ATS كلمة */
+.footer-title span {
+  color: #ff623f;
+}
+
+/* .footer .social-icons a {
+  font-size: 0.7em;
+  padding: 0 0.75em 0 0;
+} */
+
+/* script */
+/* #splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+ #splash-screen.hidden {
+  display: none;
+} 
+
+#splash-screen h1 {
+  color: #ca76c1;
+}
+
+#splash-screen video {
+  color: #ca76c1;
+} */
+
+/* .mySlides {
+  display: none;
+} */
+
+/* .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: rgb(231, 18, 18);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+@media (max-width: 390px) {
+  .ttt1 {
+    font-size: 0.8em;
+  }
+  .ttt {
+    font-size: 1em;
+  }
+
+  .navigation a {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 330px) {
+  .ttt1 {
+    font-size: 0.75em;
+    padding-left: 0.5em;
+  }
+  .ttt {
+    font-size: 0.9em;
+  }
+
+  .navigation a {
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width: 250px) {
+  .ttt1 {
+    font-size: 0.59em;
+    padding-left: 0.4em;
+  }
+  .ttt {
+    font-size: 0.7em;
+  }
+
+  .navigation a {
+    font-size: 0.5em;
+  }
+}
